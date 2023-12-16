@@ -12,7 +12,7 @@
         }
         static void Main(string[] args)
         {
-
+            ///----------------------------------- Консольная анимация ---------------------------------------\\\
 
 
             string[] frames = {
@@ -32,7 +32,7 @@
             } while (Console.ReadKey(true).Key != ConsoleKey.Q);
 
 
-
+            ///-------------------------------------- Консольное меню ----------------------------------------\\\
 
             string head = "Селекторное меню";
 
@@ -41,7 +41,9 @@
                 ["Действие 1"] = Action1,
                 ["Выход"] = null
             };
+
             string footer = "Подвал меню";
+
             ConsoleSelectMenu.CreateMenu(head, 9, 3, switches, 10, 5, footer, 12, 8);
         }
     }
